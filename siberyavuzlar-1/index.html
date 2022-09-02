@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">İş Ekleme</label>
+        <input id="new-task" type="text"><button>Ekle</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Yapılacak</label>
+            <input type="text"><button class="edit">Düzenle</button>
+            <button class="delete">Sil</button>
+        </li>
+        <li class="editMode">
+          <input type="checkbox"><label>Alışveriş Yapılacak</label>
+          <input type="text"><button class="edit">Düzenle</button>
+          <button class="delete">Sil</button>
+        </li>
+        
+      </ul>
+      
+      <h3>Tamamlandı</h3>
+      
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked><label>Çöp atılacak</label>
+          <input type="text"><button class="edit">Düzenle</button>
+          <button class="delete">Sil</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
